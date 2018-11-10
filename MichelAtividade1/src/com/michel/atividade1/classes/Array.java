@@ -2,7 +2,7 @@ package com.michel.atividade1.classes;
 
 import java.util.Arrays;
 
-public class Array {//um comentario muito impornate ner
+public class Array {//um comentario muito importante
 	
 	
 	private int[] array;
