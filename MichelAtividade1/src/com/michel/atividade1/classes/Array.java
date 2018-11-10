@@ -2,11 +2,7 @@ package com.michel.atividade1.classes;
 
 import java.util.Arrays;
 
-<<<<<<< HEAD
 public class Array {//um comentario
-=======
-public class Array {
->>>>>>> master
 	
 	
 	private int[] array;
