@@ -1,6 +1,7 @@
 package com.michel.atividade1.teste;
 
 import com.michel.atividade1.classes.Array;
+//invertendo os arrays
 
 public class Exercicio1 {
 
@@ -8,11 +9,17 @@ public class Exercicio1 {
 		
 		Array testeArray = new Array(5);
 		
-		testeArray.adicionaElemento(5);
-		testeArray.adicionaElemento(4);
-		testeArray.adicionaElemento(3);
-						
+		testeArray.adiciona(5);
+		testeArray.adiciona(4);
+		testeArray.adiciona(3);
 		
+		//System.out.println(testeArray.toString());
+		
+		testeArray.inverteVetor();
+		
+		System.out.println(testeArray.toString());
+		
+						
 
 	}
 

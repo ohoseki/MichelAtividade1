@@ -5,8 +5,8 @@ public class ContaBancaria {
 	protected String nomeCliente;
 	protected String endCliente;
 	protected String cpfCliente;
-	protected Date dtNascimentoCliente;
-	protected Date dtCliancaoConta;
+	//protected Date dtNascimentoCliente;
+	//protected Date dtCliancaoConta;
 	
 	
 	public ContaBancaria() {

@@ -1,27 +1,55 @@
 package com.michel.atividade1.classes;
 
+import java.util.Arrays;
+
 public class Array {
 	
 	
 	private int[] array;
-	private int carga;
-	private int ultimo;
+	private int[] arrayInvertido;
+	private int tamanho =0;
 		
 	public Array(int tamanho) {
 		
 		this.array = new int [tamanho];
+		this.arrayInvertido = new int [tamanho];
 		
 	}
 		
-	public void adicionaElemento(int elemento) {
-				
-		for (int i = 0; i < this.ultimo; i++) {
+	public boolean adiciona(int elemento) {
+		
+		if(this.tamanho < this.array.length) {
 			
-			this.array[i] = elemento;	
-			this.ultimo = i;
-			
-		}	
-				
+			this.array[this.tamanho] = elemento;
+			this.tamanho++;
+			return true;
+		}
+		return false;
 	}
+	
+	public void inverteVetor() {
+		
+		for (int i=0; i < this.array.length; i++) {
+			
+			this.arrayInvertido[this.arrayInvertido.length-i-1] =this.array[i]; 
+			
+		}
+		
+		this.array = this.arrayInvertido;
+		
+	}
+
+	@Override
+	public String toString() {
+		return "Array [array=" + Arrays.toString(array) + ", arrayInvertido=" + Arrays.toString(arrayInvertido)
+				+ ", tamanho=" + tamanho + "]";
+	}
+	
+	
+	
+
+
+	
+	
 	
 }
