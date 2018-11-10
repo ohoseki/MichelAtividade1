@@ -2,7 +2,7 @@ package com.michel.atividade1.classes;
 
 import java.util.Arrays;
 
-public class Array {//um comentario feito do windows um comentario feito no mac
+public class Array {//um comentario feito do windows
 	
 	
 	private int[] array;
